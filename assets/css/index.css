@@ -1,0 +1,569 @@
+@font-face {
+    font-family: quicksand;
+    src: url("../fonts/Quicksand.ttf");
+}
+
+@font-face {
+    font-family: EduTASBeginner;
+    src: url("../fonts/EduTASBeginner.ttf");
+}
+
+html {
+    background: linear-gradient(#B5C9C3, 25%, #CAB1BD);
+}
+
+body {
+    font-family: quicksand;
+    margin: 0;
+
+}
+
+/* css header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1px solid #B5C9C3;
+    border-radius: 25px;
+    box-shadow: 2px 1px 5px 0px #E7CFCD;
+}
+
+.logo_and_title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+h1 {
+    font-size: 30px;
+    color: #9F9AA4;
+}
+
+.barnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.barnav li {
+    list-style-type: none;
+    align-items: center;
+}
+
+.barnav li a {
+    text-decoration: none;
+    color: grey;
+    transition: all 1s ease;
+}
+
+.barnav li a:hover {
+    color: #E7CFCD;
+}
+
+.barnav li:last-child {
+    border: 3px solid #E7CFCD;
+    border-radius: 15px;
+    box-shadow: 0px 1px 20px 0px #E7CFCD;
+    padding: 5px;
+}
+
+@media (max-width:942px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:615px) {
+    .barnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    .logo_and_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+/* fin css header */
+/* css main ACCUEIL*/
+/* css 1ere section */
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.question {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 100px;
+}
+
+#img_interrogation {
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+
+/* css 2eme section */
+
+#lien_html,
+#lien_php {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+#lien_middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+#lien_js,
+#lien_css {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+
+.img_body {
+    transition: all 1s ease;
+}
+
+.paragraph_hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.img_body:hover .paragraph_hidden {
+    opacity: 1;
+}
+
+/* CSS MAIN page html */
+/* css 1ere section */
+.titre_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0 30px 0;
+}
+
+/* css 2eme section */
+.html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.photo_html {
+    border-radius: 25px;
+    width: 100%;
+}
+
+#balise_html {
+    width: 50%;
+}
+
+.html ul li {
+    list-style-type: circle
+}
+
+@media (max-width:942px) {
+    .html {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+/* css 3eme section */
+.texte_tableau li {
+    color: white;
+    font-family: EduTASBeginner;
+    font-size: 25px;
+    text-align: center;
+    list-style-type: none;
+
+}
+
+.balise h3 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.balise p {
+    text-align: center;
+}
+
+.texte_tableau {
+    background-image: url(../images/tableaubalise.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px;
+    cursor: pointer;
+}
+
+.texte_tableau li {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+
+.background_list ul :hover {
+    opacity: 1;
+}
+
+@media (max-width:650px) {
+    .balise p {
+        opacity: 0;
+    }
+
+    .texte_tableau {
+        background-image: none;
+        padding: 0;
+    }
+
+    .texte_tableau li {
+        color: black;
+        opacity: 1;
+
+    }
+}
+
+/* css 3eme section */
+.exemple_html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img_code_html {
+    border-radius: 0 25px 25px 0;
+    width: 100%;
+}
+
+/* css page css */
+/* 1ere section */
+.css {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+
+.photo_css {
+    border-radius: 25px;
+    width: 100%;
+}
+
+/* 2eme section */
+#balise_link {
+    border-radius: 25px;
+    width: 100%;
+}
+
+@media (max-width:942px) {
+    .css {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+/* 3eme section */
+.titre_regle_css {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.titre_regle_css h3 {
+    margin-bottom: 70px;
+}
+
+#image_regle_css {
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.regle_css {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+@media (max-width:570px) {
+    .regle_css {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+/* css page form */
+/* 1ere section */
+.form {
+    margin: 50px;
+    border-bottom: 1px solid #E7CFCD;
+}
+
+.form h2 {
+    margin-bottom: 30px;
+}
+
+.formulaire_contact div {
+    margin: 10px
+}
+
+.formulaire_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.formulaire_contact div input,
+.formulaire_contact div textarea {
+    outline: none !important;
+    border: none;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color: #9F9AA4;
+    font-family: EduTASBeginner;
+    font-size: 20px;
+}
+
+.formulaire_contact button {
+    border-radius: 25px;
+    color: #9F9AA4;
+    border-color: #E7CFCD;
+    cursor: pointer;
+}
+
+.formulaire_contact div textarea {
+    width: 100%;
+}
+
+/* 2eme section */
+
+.coordonnees {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo_coord {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* css page js */
+/* 1ere section */
+.javascript {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.photo_js {
+    border-radius: 25px;
+    width: 60%;
+}
+
+#image_js {
+    margin-left: 250px;
+}
+
+.question_js {
+    margin-right: 250px;
+}
+
+@media (max-width:1280px) {
+    .javascript {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        gap: 50px;
+    }
+
+    .question_js {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    #image_js {
+        margin-left: 100px;
+    }
+
+    #balise_js {
+        margin-left: 100px;
+    }
+
+    .question_js {
+        margin: 0;
+    }
+}
+
+/* 2eme section */
+.fonctionnalite {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.article_js {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#variable,
+#operateur,
+#condition,
+#evenement {
+    flex: 1;
+}
+
+#variable:hover,
+#operateur:hover,
+#condition:hover,
+#evenement:hover {
+    border: 1px solid #E7CFCD;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 11px #E7CFCD;
+}
+
+
+#variable img {
+    width: 90%;
+}
+
+#condition img {
+    width: 90%;
+}
+
+#evenement img {
+    width: 90%;
+}
+
+@media (max-width:800px) {
+    .article_js {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #variable,
+    #operateur,
+    #condition,
+    #evenement {
+        padding-bottom: 100px;
+    }
+}
+
+/* 3eme section */
+
+.exemple_html {
+    margin-top: 50px;
+}
+
+/* css page PHP */
+/* 1ere section */
+
+.php {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.photo_php {
+    border-radius: 25px;
+}
+
+@media (max-width:800px){
+    .php{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* 2eme section */
+
+.third_section_php{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.schéma_php{
+    width: 100%;
+}
+/* css footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1px solid #B5C9C3;
+    border-radius: 25px;
+    box-shadow: 2px 1px 5px 0px #E7CFCD;
+    gap: 30px;
+    padding-top: 7px;
+}
+
+.reseau {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+footer div p {
+    color: #636363;
+}
+
+footer div img {
+    transition: transform .1s;
+}
+
+footer div img:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
