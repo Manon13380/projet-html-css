@@ -199,6 +199,13 @@ h2 {
     }
 }
 
+@media (max-width: 500px) {
+    .paragraph_hidden {
+        opacity: 1;
+    }
+
+}
+
 /* css 3eme section */
 .texte_tableau li {
     color: white;
@@ -512,28 +519,32 @@ h2 {
     border-radius: 25px;
 }
 
-@media (max-width:800px){
-    .php{
+@media (max-width:800px) {
+    .php {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 }
+
 /* 2eme section */
 
-.third_section_php{
+.third_section_php {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.fonctionnement{
+
+.fonctionnement {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.schéma_php{
+
+.schéma_php {
     width: 100%;
 }
+
 /* css footer */
 footer {
     display: flex;
@@ -566,4 +577,13 @@ footer div img:hover {
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
+}
+
+/* css formulaire */
+
+@media (max-width:500px) {
+    .coordonnees {
+        display : flex;
+        flex-direction: column;
+    }
 }
